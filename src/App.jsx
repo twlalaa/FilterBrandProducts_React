@@ -96,13 +96,13 @@ const App = () => {
           )}
           {page === 2 && (
             <div id="ContainerThree" className="flex justify-center">
-              <div className="grid grid-cols-3 gap-[1px] border  border-gray-300 grid-rows-2 bg-gray-300 rounded-lg">
-                <SizeItem size="XS" />
+              <div className="grid grid-cols-3 gap-[1px] border border-gray-300 grid-rows-2 bg-gray-300 rounded-lg">
+                <SizeItem size="XS" radius={"rounded-tl-lg"} />
                 <SizeItem size="S" />
-                <SizeItem size="M" />
-                <SizeItem size="L" />
+                <SizeItem size="M" radius={"rounded-tr-lg"} />
+                <SizeItem size="L" radius={"rounded-bl-lg"} />
                 <SizeItem size="XL" />
-                <SizeItem size="XXL" />
+                <SizeItem size="XXL" radius={"rounded-br-lg"} />
               </div>
             </div>
           )}

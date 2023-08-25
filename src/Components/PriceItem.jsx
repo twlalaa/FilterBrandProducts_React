@@ -15,7 +15,7 @@ const PriceItem = (props) => {
   return (
     <div
       onClick={changeClicked}
-      className="relative mb-5 border cursor-pointer text-black border-black rounded-2xl p-3 flex justify-center items-center"
+      className="relative shadow-md shadow-blue-300 mb-5 border cursor-pointer text-black border-black rounded-2xl p-3 flex justify-center items-center"
       style={{ opacity: `${select ? "1" : "0.2"}` }}
     >
       {props.children}

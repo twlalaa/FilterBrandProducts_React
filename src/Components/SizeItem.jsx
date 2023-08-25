@@ -11,12 +11,15 @@ const SizeItem = (props) => {
   const changeClicked = () => {
     setSelect(!select);
   };
+
   return (
     <div
       onClick={changeClicked}
       className={`${
         select ? "z-10 transform scale-[1.02] shadow-md shadow-blue-300" : ""
-      } cursor-pointer relative flex justify-center items-center text-lg p-5 bg-white`}
+      } cursor-pointer ${
+        props.radius
+      } relative flex justify-center items-center text-lg p-5 bg-white`}
     >
       {props.size}
       {select && (
